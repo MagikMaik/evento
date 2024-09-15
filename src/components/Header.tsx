@@ -30,7 +30,10 @@ export default function Header() {
             >
               <Link href={route.path}>{route.name}</Link>
               {activePathname === route.path && (
-                <motion.div layoutId="header-active-link" className="bg-accent h-1 w-full absolute bottom-0"></motion.div>
+                <motion.div
+                  layoutId="header-active-link"
+                  className="bg-accent h-1 w-full absolute bottom-0"
+                ></motion.div>
               )}
             </li>
           ))}
