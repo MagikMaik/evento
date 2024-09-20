@@ -23,13 +23,14 @@ export default function EventCard({ event }: EventCardProps) {
       className="flex-1 basis-80 h-[380px] max-w-[500px]"
       href={`/event/${event.slug}`}
       style={{
-      
+        // @ts-ignore
         scale: scaleProgress,
+        // @ts-ignore
         opacity: opacityProgress,
       }}
-      initial= {{
-        opacity:0,
-        scale: 0.8
+      initial={{
+        opacity: 0,
+        scale: 0.8,
       }}
     >
       <section className="w-full h-full flex flex-col bg-white/[3%] rounded-xl overflow-hidden relative state-effects">
